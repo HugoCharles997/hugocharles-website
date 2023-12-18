@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+//FONT
+@font-face {
+  font-family: lato;
+  src: url("/src/assets/fonts/IBM_Plex_Mono/IBMPlexMono-Light.ttf")
+    format("truetype");
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
