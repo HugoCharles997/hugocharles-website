@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/main-layout', pathMatch: 'full' },
   { path: '/main-layout', component: MainLayoutComponent },
+  { path: '', redirectTo: '/main-layout', pathMatch: 'full' },
 ];
 
 @NgModule({
