@@ -1,1 +1,31 @@
-<p>header works!</p>
+<div class="container-fluid">
+  <div class="d-flex m-5">
+    <img class="col-3" src="../../../../assets/img/logo.png" alt="logo" />
+
+    <button class="col-1 toggle-btn m-2" mat-button (click)="toggleMenu()">
+      menu
+    </button>
+
+    <h1
+      *ngIf="!showMenu"
+      class="col-8 d-flex current-menu justify-content-end align-items-center"
+    >
+      home
+    </h1>
+
+    <div
+      class="col-8 d-flex align-items-center justify-content-end"
+      *ngIf="showMenu"
+    >
+      <ul class="navbar">
+        <li class="toggle-menu-item home-button m-2" mat-button>home</li>
+        <li class="toggle-menu-item about-button m-2" mat-button>about</li>
+        <li class="toggle-menu-item projects-button m-2" mat-button>
+          projects
+        </li>
+        <li class="toggle-menu-item music-button m-2" mat-button>music</li>
+        <li class="toggle-menu-item contact-button m-2" mat-button>contact</li>
+      </ul>
+    </div>
+  </div>
+</div>
