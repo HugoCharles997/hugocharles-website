@@ -13,13 +13,18 @@
       home
     </h1>
 
-    <div class="row" *ngIf="showMenu">
+    <div
+      class="col-8 d-flex align-items-center justify-content-end"
+      *ngIf="showMenu"
+    >
       <ul class="navbar">
-        <li class="toggle-menu-item home-button" mat-button>home</li>
-        <li class="toggle-menu-item about-button" mat-button>about</li>
-        <li class="toggle-menu-item projects-button" mat-button>projects</li>
-        <li class="toggle-menu-item music-button" mat-button>music</li>
-        <li class="toggle-menu-item contact-button" mat-button>contact</li>
+        <li class="toggle-menu-item home-button m-2" mat-button>home</li>
+        <li class="toggle-menu-item about-button m-2" mat-button>about</li>
+        <li class="toggle-menu-item projects-button m-2" mat-button>
+          projects
+        </li>
+        <li class="toggle-menu-item music-button m-2" mat-button>music</li>
+        <li class="toggle-menu-item contact-button m-2" mat-button>contact</li>
       </ul>
     </div>
   </div>

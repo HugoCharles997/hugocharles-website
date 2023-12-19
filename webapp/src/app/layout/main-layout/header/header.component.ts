@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import gsap from 'gsap';
 
 @Component({
@@ -10,6 +10,9 @@ export class HeaderComponent {
   showMenu = false;
 
   toggleMenu() {
-    this.showMenu = !this.showMenu;
+    gsap.to('.toggle-btn', { duration: 0.3, y: -10, yoyo: true, repeat: 1 });
+    setTimeout(() => {
+      this.showMenu = !this.showMenu;
+    }, 1000);
   }
 }
