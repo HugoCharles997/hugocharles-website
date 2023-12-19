@@ -14,5 +14,11 @@ export class HeaderComponent {
     setTimeout(() => {
       this.showMenu = !this.showMenu;
     }, 1000);
+
+    gsap.to('.current-menu', {
+      duration: 2,
+      x: '100%',
+      ease: 'bounce.out(1, 0.75)',
+    });
   }
 }
