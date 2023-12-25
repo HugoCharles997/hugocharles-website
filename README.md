@@ -1,2 +1,2 @@
 # hugocharles-website
-personal website
+personal website made w/ Angular
